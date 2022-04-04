@@ -35,3 +35,5 @@ Change hostname names and reboot the machines
 
     iex --sname a -pa _build/dev/lib/chucky/ebin --app chucky --erl  "-config config/anode.config"
     iex --sname b -pa _build/dev/lib/chucky/ebin --app chucky --erl  "-config config/bnode.config"
+
+    echo SDFERMOWERPEMZLSDFIE > ~/.erlang.cookie
