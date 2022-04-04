@@ -21,3 +21,17 @@
 
 
 # chucky
+
+## Server setup
+
+Create two VMs
+
+Change hostname names and reboot the machines
+
+    hostnamectl set-hostname anode
+    hostnamectl set-hostname bnode
+
+## Starting nodes
+
+    iex --sname a -pa _build/dev/lib/chucky/ebin --app chucky --erl  "-config config/anode.config"
+    iex --sname b -pa _build/dev/lib/chucky/ebin --app chucky --erl  "-config config/bnode.config"
